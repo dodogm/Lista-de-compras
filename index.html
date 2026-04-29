@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quicklist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    
-    
-    <script src="script.js"></script>
+    <div class="container">
+
+        <div class="top">
+            <img src="assets/Vector.svg" alt="">
+            <h1>quicklist</h1>
+        </div>
+
+        <div class="link">
+            <button>
+                <a href="#">
+                    <img src="assets/link-button.svg" alt="">
+                </a>
+            </button>
+        </div>
+
+        <header>
+            <h1>Compras da semana</h1>
+        </header>
+
+        <form action="">
+
+            <div class="items">
+                <input type="text" placeholder="Adicione um novo item">
+                <button>Adicionar item</button>
+            </div>
+
+            <ul>
+
+                <li class="item">
+                    <input type="checkbox"">
+                    <p> Pão de forma</p>
+                    <button class="delete">
+                    <img src="assets/Frame-3.svg" alt="">
+                    </button>
+
+                    </button>
+                </li>
+
+                 <li class="item">
+                    <input type="checkbox"">
+                    <p> Café preto</p>
+                    <button class="delete">
+                    <img src="assets/Frame-3.svg" alt="">
+                    </button>
+
+                    </button>
+                </li>
+
+                <li class="item">
+                    <input type="checkbox" ">
+                    <p> Suco de laranja</p>
+                    <button class="delete">
+                    <img src="assets/Frame-3.svg" alt="">
+                    </button>
+
+                    </button>
+                </li>
+
+                <li class="item">
+                    <input type="checkbox" ">
+                    <p> Bolacha </p>
+                    <button class="delete">
+                    <img src="assets/Frame-3.svg" alt="">
+                    </button>
+
+                    </button>
+                </li>
+            </ul>
+
+            <div class="alert">
+                <img src="assets/warning-circle-filled.svg" alt="">
+            <span>O item foi removido da lista</span>
+            <img src="assets/delete-small.svg" alt="">
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </div>
 </body>
+
 </html>
