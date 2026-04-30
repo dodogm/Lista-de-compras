@@ -199,7 +199,7 @@ ul {
 
 
 .alert {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
@@ -214,23 +214,19 @@ ul {
   width: 39.18rem;
   height: 2.75rem;
   padding: .75rem;
+  
 
-  animation: desaparecer 4s forwards;
-  transform: translateY(-10px);
-
+  button {
+    background: 
+    none;
+    border: none;
+    cursor: pointer;
+  }
   span {
     flex: 1;
   }
-}
 
-@keyframes desaparecer {
-  0% {
-    opacity: 1;
-    transform: translatey(0);
-  }
-  100% {
-    opacity: 0;
-  }
+  
 }
 
 
