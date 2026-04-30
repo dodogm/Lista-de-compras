@@ -33,7 +33,7 @@
         </div>
 
         <div class="link">
-            <button>
+            <button >
                 <a href="#">
                     <img src="assets/link-button.svg" alt="">
                 </a>
@@ -47,50 +47,58 @@
         <form action="">
 
             <div class="items">
-                <input type="text" placeholder="Adicione um novo item">
-                <button>Adicionar item</button>
+                <input id="newItem" type="text" placeholder="Adicione um novo item">
+                <button id="addBtn">Adicionar item</button>
             </div>
 
-            <ul>
+            <ul id="list">
 
                 <li class="item">
-                    <input type="checkbox"">
-                    <p> Pão de forma</p>
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <div class="checkbox-img"></div>
+                        <p> Pão de forma</p>
+                    </label>
                     <button class="delete">
                     <img src="assets/Frame-3.svg" alt="">
                     </button>
-
-                    </button>
+                    
                 </li>
 
                  <li class="item">
-                    <input type="checkbox"">
+                    <label class="checkbox-label">
+                    <div class="checkbox-img"></div>
+                    <input type="checkbox">
                     <p> Café preto</p>
+                    </label>
                     <button class="delete">
                     <img src="assets/Frame-3.svg" alt="">
                     </button>
 
-                    </button>
                 </li>
 
                 <li class="item">
-                    <input type="checkbox" ">
+                    <label class="checkbox-label">
+                    <div class="checkbox-img"></div>
+                    <input type="checkbox">
                     <p> Suco de laranja</p>
+                    </label>
                     <button class="delete">
                     <img src="assets/Frame-3.svg" alt="">
                     </button>
 
-                    </button>
                 </li>
 
                 <li class="item">
-                    <input type="checkbox" ">
+                    <label class="checkbox-label">
+                    <div class="checkbox-img"></div>
+                    <input type="checkbox">
                     <p> Bolacha </p>
+                    </label>
                     <button class="delete">
                     <img src="assets/Frame-3.svg" alt="">
                     </button>
 
-                    </button>
                 </li>
             </ul>
 
