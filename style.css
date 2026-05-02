@@ -35,7 +35,6 @@ body {
 .container {
   max-width: 40rem;
   margin-inline: auto;
-
 }
 
 .top {
@@ -58,37 +57,30 @@ body {
     padding-left: 1.125rem;
     border: solid 1px var(--border-primary);
     outline: none;
-  
   }
 
   input:hover {
-  border: solid 1px var(--border-hover);
-}
+    border: solid 1px var(--border-hover);
+  }
 
   input:focus {
-  border: solid 1px var(--color-brand);
-}
-
-
+    border: solid 1px var(--color-brand);
+  }
 
   button {
-  font: var(--label);
-  background-color: var(--color-brand);
-  color: var(--bg-secondary);
-  border-radius: .75rem;
-  border: none;
-  width: 10rem;
+    font: var(--label);
+    background-color: var(--color-brand);
+    color: var(--bg-secondary);
+    border-radius: .75rem;
+    border: none;
+    width: 10rem;
+  }
+
+  button:hover {
+    background-color: var(--color-brand-hover);
+  }
+
 }
-
-button:hover {
-  background-color: var(--color-brand-hover);
-}
-
-}
-
-
-
-
 
 .link button {
 
@@ -142,32 +134,33 @@ ul {
   background-color: var(--bg-secondary);
   color: var(--content-secondary);
 
-  
-    position: relative;
 
-    [type="checkbox"] {
-      all: unset;
-      position: absolute;
-      inset: 2;
-      cursor: pointer;
-    }
+  position: relative;
 
+  [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 2;
+    cursor: pointer;
+  }
+
+  .checkbox-img {
+    flex: 0 0 1rem;
+    height: 1rem;
+    background-image: url(assets/state=Default.svg);
+    margin-right: .75rem;
+
+  }
+
+  &:hover,
+  :focus-within {
     .checkbox-img {
-      flex:  0 0 1rem;
-      height: 1rem;
-      background-image: url(assets/state=Default.svg);
-      margin-right: .75rem;
-     
+      background-image: url(assets/state=hover.svg);
     }
+  }
 
-    &:hover, :focus-within {
-      .checkbox-img {
-        background-image: url(assets/state=hover.svg);
-      }
-    }
-
-    &:has(:checked) {
-      .checkbox-img {
+  &:has(:checked) {
+    .checkbox-img {
       background-image: url(assets/state=selected.svg);
     }
   }
@@ -176,26 +169,24 @@ ul {
     display: flex;
     align-items: center;
     cursor: pointer;
-     
-}
-}
 
-
-
-  p {
-    flex: 1;
   }
+}
 
-  .delete {
-    background: none;
-    border: none;
-    cursor: pointer;
+p {
+  flex: 1;
+}
 
-    img {
-      width: 1rem;
-      
-    }
+.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  img {
+    width: 1rem;
+
   }
+}
 
 
 .alert {
@@ -214,22 +205,60 @@ ul {
   width: 39.18rem;
   height: 2.75rem;
   padding: .75rem;
-  
+
 
   button {
-    background: 
-    none;
+    background:
+      none;
     border: none;
     cursor: pointer;
   }
+
   span {
     flex: 1;
   }
+}
 
+@media (width < 41em) {
+  .container {
+    max-width: 20rem;
+    margin-inline: auto;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    input {
+
+      height: 2.75rem;
+      width: 20.37rem;
+      padding-left: 1.125rem;
+    }
+
+    button {
+      width: 20.37rem;
+      height: 2.75rem;
+      padding-left: 1.125rem;
+    }
+  }
+
+  .item {
+
+  height: 2.75rem;
+  width: 20.37rem;
+}
+
+.alert {
   
+  width: 20.37rem;
+  height: 2.75rem;
+}
 }
 
 
-  
-
- 

@@ -21,6 +21,7 @@ function createItem(text) {
     // Remover item ao clicar no botão
     deleteBtn.addEventListener('click', () => {
         li.remove()
+        showNotification()
     })
 
     li.appendChild(label)
@@ -59,7 +60,7 @@ function showNotification () {
     //Esconder depois do tempo determinado
     setTimeout(() => {
         alert.style.display = 'none'
-    }, 1500);
+    }, 2000);
 }
 
 document.getElementById('close').addEventListener('click',
