@@ -41,7 +41,7 @@ addBtn.addEventListener('click', (e) => {
 
 // Permitir adicionar com Enter
 newItemInput.addEventListener('keypress', (e) => {
-    e.preventDefault()
+    
     if (e.key === 'Enter') {
         addBtn.click()
     }
