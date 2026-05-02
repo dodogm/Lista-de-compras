@@ -104,7 +104,7 @@ h1 {
   font-family: 'sora', 'sanserif' var(--title);
 }
 
-form {
+.mg-top {
   margin-top: 2.75rem;
 }
 
