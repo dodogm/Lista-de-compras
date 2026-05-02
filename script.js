@@ -30,7 +30,8 @@ function createItem(text) {
 }
 
 // Adicionar item ao clicar no botão
-addBtn.addEventListener('click', () => {
+addBtn.addEventListener('click', (e) => {
+    e.preventDefault()
     const text = newItemInput.value.trim()
     if (text !== '') {
         createItem(text)
@@ -40,6 +41,7 @@ addBtn.addEventListener('click', () => {
 
 // Permitir adicionar com Enter
 newItemInput.addEventListener('keypress', (e) => {
+    e.preventDefault()
     if (e.key === 'Enter') {
         addBtn.click()
     }
